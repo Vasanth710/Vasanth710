@@ -1,0 +1,80 @@
+{
+    "name": "LoginCustomization",
+    "fantasyName": "Login Customization",
+    "vendor": "JJ",
+    "version": "1.0.2",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Customization done on the login page which include form updates, template updates.",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/LoginCustom.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/LoginCustom/Configuration/LoginCustom.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "checkout": "Modules/LoginCustom/Sass/_logincustomization-logincustom.scss"
+        },
+        "files": [
+            "Modules/LoginCustom/Sass/_logincustomization-logincustom.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/LoginCustom/Templates/jj_login_register_register.tpl",
+                    "Modules/LoginCustom/Templates/jj_login_register.tpl",
+                    "Modules/LoginCustom/Templates/jj_login_register_login.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/LoginCustom/JavaScript/JJ.LoginCustomization.LoginCustom.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/LoginCustom/JavaScript/JJ.LoginCustomization.LoginCustom.js",
+                    "Modules/LoginCustom/JavaScript/LoginCustom.View.js",
+                    "Modules/LoginCustom/JavaScript/JJ.LoginCustomization.LoginCustom.Model.js",
+                    "Modules/LoginCustom/JavaScript/JJ.LoginCustomization.LoginCustom.SS2Model.js",
+                    "Modules/LoginCustom/JavaScript/sweetAlert.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/LoginCustom/SuiteScript/JJ.LoginCustomization.LoginCustom.js",
+        "files": [
+            "Modules/LoginCustom/SuiteScript/JJ.LoginCustomization.LoginCustom.js",
+            "Modules/LoginCustom/SuiteScript/LoginCustom.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\LoginCustomization",
+    "suitescript2": {
+        "files": [
+            "Modules/LoginCustom/SuiteScript2/LoginCustom.Service.ss"
+        ]
+    }
+}

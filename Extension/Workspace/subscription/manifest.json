@@ -1,0 +1,83 @@
+{
+    "name": "subscription",
+    "fantasyName": "subscription",
+    "vendor": "JJ",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "version": "1.0.1",
+    "description": "This extension is used for the subscription of a product.",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/subscription.Service.ss",
+                "services/unsubscribe.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/subscription/Configuration/subscription.json"
+        ]
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/subscription/Templates/jj_subscription_subscription.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/subscription/Sass/_subscription-subscription.scss"
+        },
+        "files": [
+            "Modules/subscription/Sass/_subscription-subscription.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/subscription/JavaScript/JJ.subscription.subscription.js",
+            "shopping": "Modules/subscription/JavaScript/JJ.subscription.subscription.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/subscription/JavaScript/JJ.subscription.subscription.js",
+                    "Modules/subscription/JavaScript/subscription.View.js",
+                    "Modules/subscription/JavaScript/JJ.subscription.subscription.Model.js",
+                    "Modules/subscription/JavaScript/JJ.subscription.subscription.Router.js",
+                    "Modules/subscription/JavaScript/JJ.subscription.unsubscribe.Model.js"
+                ]
+            },
+            "shopping": {
+                "files": [
+                    "Modules/subscription/JavaScript/JJ.subscription.subscription.js",
+                    "Modules/subscription/JavaScript/subscription.View.js",
+                    "Modules/subscription/JavaScript/JJ.subscription.subscription.Model.js",
+                    "Modules/subscription/JavaScript/JJ.subscription.subscription.Router.js",
+                    "Modules/subscription/JavaScript/JJ.subscription.unsubscribe.Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/subscription/SuiteScript/JJ.subscription.subscription.ServiceController.js",
+        "files": [
+            "Modules/subscription/SuiteScript/JJ.subscription.subscription.js",
+            "Modules/subscription/SuiteScript/JJ.subscription.subscription.ServiceController.js",
+            "Modules/subscription/SuiteScript/JJ.subscription.unsubscribe.ServiceController.js"
+        ]
+    }
+}

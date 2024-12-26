@@ -1,0 +1,21 @@
+{
+    "type": "SCS",
+    "version": "23.2.4",
+    "application": [
+        "shopping",
+        "myaccount",
+        "checkout"
+    ],
+    "extensible_resources": [
+        "skins",
+        "javascript",
+        "ssp-libraries",
+        "sass",
+        "templates",
+        "services",
+        "configuration",
+        "assets",
+        "suitescript2",
+        "translations"
+    ]
+}

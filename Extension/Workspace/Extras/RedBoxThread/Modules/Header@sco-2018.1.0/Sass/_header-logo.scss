@@ -1,0 +1,22 @@
+// Edited for Threads Theme
+
+.header-logo {
+    text-align: center;
+    display: inline-block;
+
+    @media (max-width: $screen-xs-min) {
+        max-width: 100%;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        width: 100%;
+    }
+}
+
+.header-logo-image {
+    width: auto;
+    vertical-align: middle;
+    max-height: 200px;
+}
+
+.header-logo-sitename {}

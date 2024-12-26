@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "subtab": {
+    "id": "infiniteScroll",
+    "title": "Infinite Scroll",
+    "group": "extensions",
+    "docRef": "chapter_1554909469"
+  },
+  "properties": {
+    "infiniteScroll.enableAutoScroll": {
+      "group": "extensions",
+      "type": "boolean",
+      "subtab": "infiniteScroll",
+      "title": "Enable Auto Scroll",
+      "description": "If checked, pages automatically load and display when the user reaches thebottom of the page, instead of offering a Load More Content button.",
+      "default": false
+    },
+    "infiniteScroll.nextBtnText": {
+      "group": "extensions",
+      "type": "string",
+      "subtab": "infiniteScroll",
+      "title": "Load More Content Label",
+      "description": "Sets the label for the load more content button.",
+      "default": "Load Next Page"
+    },
+    "infiniteScroll.prevBtnText": {
+      "group": "extensions",
+      "type": "string",
+      "subtab": "infiniteScroll",
+      "title": "Load Previous Content Label",
+      "description": "Sets the label for the load previous content button.",
+      "default": "Load Previous Page"
+    }
+  }
+}
+

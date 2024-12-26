@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "Restrict404_subtab",
+        "title": "Restrict 404 Page Not Found",
+        "description": "To restrict 404 page not found and redirect to home page",
+        "group": "extensions"
+    },
+    "properties": { 
+        "Restrict404.url": {
+            "group": "extensions",
+            "subtab": "Restrict404_subtab",
+            "type": "string",
+            "title": "Redirect URL",
+            "description": "URL that we need to redirect when encountering 404 page",
+            "default": "https://www.kalzone.ca/"
+        }
+    }
+}

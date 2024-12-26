@@ -1,0 +1,98 @@
+{
+    "name": "Favourites",
+    "fantasyName": "Favourites",
+    "vendor": "JJ",
+    "version": "1.0.3",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Favourites item for users",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/Favourites/Configuration/Favourites.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/Favourites/Sass/_favourites-favourites.scss",
+            "myaccount": "Modules/Favourites/Sass/_favourites-favourites.scss"
+        },
+        "files": [
+            "Modules/Favourites/Sass/_favourites-favourites.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Favourites/Templates/jj_favourites_favourites.tpl",
+                    "Modules/Favourites/Templates/jj_favourites_favourites_list.tpl",
+                    "Modules/Favourites/Templates/JJ_Facet_item_cell_grid_custom.tpl",
+                    "Modules/Favourites/Templates/JJ_Facet_item_cell_list_custom.tpl",
+                    "Modules/Favourites/Templates/JJ_Facet_item_cell_tabel_custom.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/Favourites/Templates/jj_favourites_favourites.tpl",
+                    "Modules/Favourites/Templates/jj_favourites_favourites_list.tpl",
+                    "Modules/Favourites/Templates/JJ_Facet_item_cell_grid_custom.tpl",
+                    "Modules/Favourites/Templates/JJ_Facet_item_cell_list_custom.tpl",
+                    "Modules/Favourites/Templates/JJ_Facet_item_cell_tabel_custom.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Favourites/JavaScript/JJ.Favourites.Favourites.js",
+            "myaccount": "Modules/Favourites/JavaScript/JJ.Favourites.Favourites.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Favourites/JavaScript/JJ.Favourites.Favourites.js",
+                    "Modules/Favourites/JavaScript/Favourites.View.js",
+                    "Modules/Favourites/JavaScript/Favourites.ListView.js",
+                    "Modules/Favourites/JavaScript/JJ.Favourites.Favourites.Collection.js",
+                    "Modules/Favourites/JavaScript/JJ.Favourites.Favourites.Model.js",
+                    "Modules/Favourites/JavaScript/JJ.Favourites.Favourites.SS2Model.js",
+                    "Modules/Favourites/JavaScript/sweetAlert.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/Favourites/JavaScript/JJ.Favourites.Favourites.js",
+                    "Modules/Favourites/JavaScript/Favourites.View.js",
+                    "Modules/Favourites/JavaScript/Favourites.ListView.js",
+                    "Modules/Favourites/JavaScript/JJ.Favourites.Favourites.Collection.js",
+                    "Modules/Favourites/JavaScript/JJ.Favourites.Favourites.Model.js",
+                    "Modules/Favourites/JavaScript/JJ.Favourites.Favourites.SS2Model.js",
+                    "Modules/Favourites/JavaScript/sweetAlert.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\Favourites",
+    "suitescript2": {
+        "files": [
+            "Modules/Favourites/SuiteScript2/Favourites.Service.ss",
+            "Modules/Favourites/SuiteScript2/JJ.Favourites.Favourites.Model.js"
+        ]
+    }
+}

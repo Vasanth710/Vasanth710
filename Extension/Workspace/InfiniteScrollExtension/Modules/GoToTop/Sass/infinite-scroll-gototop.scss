@@ -1,0 +1,31 @@
+.infinite-scroll-top {
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 999;
+    right: $sc-margin-lv4;
+    bottom: $sc-margin-lv8;
+    background: no-repeat center 43%;
+    background: rgba($sc-neutral-shade, 0.8);
+    @include border-radius($sc-border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infinite-scroll-top-icon {
+    @extend .chevron-up;
+    vertical-align: -webkit-baseline-middle;
+    vertical-align: middle;
+    color: $sc-neutral-shade-0;
+    font-size: $sc-font-size-l * 2;
+}
+
+@media only screen and (max-width: 767px) {
+  .infinite-scroll-top {
+    display: none !important;
+  }
+}
+

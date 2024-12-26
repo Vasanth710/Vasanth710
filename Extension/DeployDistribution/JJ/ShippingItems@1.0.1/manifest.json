@@ -1,0 +1,74 @@
+{
+    "name": "ShippingItems",
+    "fantasyName": "ShippingItems",
+    "vendor": "JJ",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "version": "1.0.1",
+    "description": "This extension is used to set the delivery method based on the items added to the cart. Restrict the customer from selecting the credit card type.",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/ShippingItems/Configuration/ShippingItems.json"
+        ]
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/ShippingItems/Templates/jj_shippingitems_shippingitems.tpl",
+                    "Modules/ShippingItems/Templates/jj_creditcard_creditcard.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/ShippingItems/Templates/jj_creditcard_creditcard.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "checkout": "Modules/ShippingItems/Sass/_shippingitems-shippingitems.scss",
+            "myaccount": "Modules/ShippingItems/Sass/_shippingitems-shippingitems.scss"
+        },
+        "files": [
+            "Modules/ShippingItems/Sass/_shippingitems-shippingitems.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/ShippingItems/JavaScript/JJ.ShippingItems.ShippingItems.js",
+            "myaccount": "Modules/ShippingItems/JavaScript/JJ.CreditCard.CreditCard.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/ShippingItems/JavaScript/JJ.ShippingItems.ShippingItems.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/ShippingItems/JavaScript/JJ.CreditCard.CreditCard.js"
+                ]
+            }
+        }
+    },
+    "suitescript2": {
+        "files": []
+    }
+}

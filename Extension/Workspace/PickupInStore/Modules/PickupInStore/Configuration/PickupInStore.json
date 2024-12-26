@@ -1,0 +1,11 @@
+{
+    "type": "object",
+    "properties": {
+        "PickupInStore.config": {
+            "group": "checkoutApp",
+            "type": "string",
+            "title": "Pickup in Store Not Available Text",
+            "description": "Enter the text need to be shown when the item is not in stock."
+        }
+    }
+}

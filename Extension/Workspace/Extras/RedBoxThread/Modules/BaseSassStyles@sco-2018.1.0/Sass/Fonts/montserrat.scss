@@ -1,0 +1,10 @@
+$fonts-path: getThemeAssetsPath("fonts");
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: url("#{$fonts-path}/Montserrat-VariableFont_wght.ttf") format("truetype"),
+    url("#{$fonts-path}/Montserrat-VariableFont_wght.ttf") format("truetype");
+    font-display: swap;
+}

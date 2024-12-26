@@ -1,0 +1,82 @@
+{
+    "name": "HeaderCustom",
+    "fantasyName": "Header Custom",
+    "vendor": "JJ",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "To hide Register menu on header for logged-in users",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/Hidemenu/Sass/_header-custom.scss",
+            "myaccount": "Modules/Hidemenu/Sass/_header-custom.scss",
+            "checkout": "Modules/Hidemenu/Sass/_header-custom.scss"
+        },
+        "files": [
+            "Modules/Hidemenu/Sass/_header-custom.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Hidemenu/Templates/header_menu_update.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/Hidemenu/Templates/header_menu_update.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/Hidemenu/Templates/header_menu_update.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Hidemenu/JavaScript/JJ.HeaderCustom.Hidemenu.js",
+            "myaccount": "Modules/Hidemenu/JavaScript/JJ.HeaderCustom.Hidemenu.js",
+            "checkout": "Modules/Hidemenu/JavaScript/JJ.HeaderCustom.Hidemenu.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Hidemenu/JavaScript/JJ.HeaderCustom.Hidemenu.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/Hidemenu/JavaScript/JJ.HeaderCustom.Hidemenu.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/Hidemenu/JavaScript/JJ.HeaderCustom.Hidemenu.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\HeaderCustom",
+    "suitescript2": {
+        "files": []
+    }
+}

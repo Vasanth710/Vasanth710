@@ -1,0 +1,60 @@
+{
+    "name": "MyaccountPageUpdate",
+    "fantasyName": "Myaccount Page Update",
+    "vendor": "JJ",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCS,SCA",
+    "target_version": {
+        "SCS": "",
+        "SCA": ""
+    },
+    "description": "Extension for updating changes on address book on MyAccount Page.",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/MyaccountPageUpdate/Sass/_myaccountpageupdate-myaccountpageupdate.scss"
+        },
+        "files": [
+            "Modules/MyaccountPageUpdate/Sass/_myaccountpageupdate-myaccountpageupdate.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/MyaccountPageUpdate/Templates/jj_global_views_countriesDropdown.tpl",
+                    "Modules/MyaccountPageUpdate/Templates/jj_global_views_states.tpl",
+                    "Modules/MyaccountPageUpdate/Templates/jj_myaccount_address_edit.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/MyaccountPageUpdate/JavaScript/JJ.MyaccountPageUpdate.MyaccountPageUpdate.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/MyaccountPageUpdate/JavaScript/JJ.MyaccountPageUpdate.MyaccountPageUpdate.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\MyaccountPageUpdate",
+    "suitescript2": {
+        "files": []
+    }
+}

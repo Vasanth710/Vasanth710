@@ -1,0 +1,66 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "registrationForm",
+        "title": "Registration Form",
+        "group": "extensions"
+    },
+    "properties": {
+        "registrationForm.emailId": {
+            "group": "extensions",
+            "subtab": "registrationForm",
+            "type": "string",
+            "title": "Recipient Email",
+            "default": "julia@jobinandjismi.com"
+        },
+        "registrationForm.employeeId": {
+            "group": "extensions",
+            "subtab": "registrationForm",
+            "type": "string",
+            "title": "Sender ID",
+            "default": "1768"
+        },
+        "registrationForm.emailSubject": {
+            "group": "extensions",
+            "subtab": "registrationForm",
+            "type": "string",
+            "title": "Email's Subject",
+            "default": "Newly Registered Customer Details"
+        },
+        "registrationForm.emailContent": {
+            "group": "extensions",
+            "subtab": "registrationForm",
+            "type": "string",
+            "title": "Email's Content Heading",
+            "default": "A new customer has made a request for access"
+        },
+        "registrationForm.pageTitle": {
+            "group": "extensions",
+            "subtab": "registrationForm",
+            "type": "string",
+            "title": "Page Title",
+            "default": "Registration form"
+        },
+        "registrationForm.pageHeader": {
+            "group": "extensions",
+            "subtab": "registrationForm",
+            "type": "string",
+            "title": "Page Header",
+            "default": "Lead Form"
+        },
+        "registrationForm.folderId": {
+            "group": "extensions",
+            "subtab": "registrationForm",
+            "type": "string",
+            "title": "Signature Folder ID",
+            "default": "15796"
+        },
+        "registrationForm.PriorityPlusInformation": {
+            "group": "extensions",
+            "subtab": "registrationForm",
+            "type": "string",
+            "title": "Warning message showing for Priority Plus option ",
+            "default": "Please set the billing address, shipping address, and payment details within three days, otherwise your subscription will be canceled."
+        }
+    }
+}

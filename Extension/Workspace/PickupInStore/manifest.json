@@ -1,0 +1,61 @@
+{
+    "name": "PickupInStore",
+    "fantasyName": "PickupInStore",
+    "vendor": "JJ",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "version": "1.0.0",
+    "description": "Remove Pop-Up for Pick Up In-Store Option and Update Address as Static",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/PickupInStore/Configuration/PickupInStore.json"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/PickupInStore/Templates/jj_pickupinstore_pickupinstore.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/PickupInStore/Sass/_pickupinstore-pickupinstore.scss"
+        },
+        "files": [
+            "Modules/PickupInStore/Sass/_pickupinstore-pickupinstore.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/PickupInStore/JavaScript/JJ.PickupInStore.PickupInStore.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/PickupInStore/JavaScript/JJ.PickupInStore.PickupInStore.js"
+                ]
+            }
+        }
+    },
+    "suitescript2": {
+        "files": []
+    }
+}

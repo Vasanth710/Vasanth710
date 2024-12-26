@@ -1,0 +1,74 @@
+/*
+    © 2015 NetSuite Inc.
+    User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+    provided, however, if you are an authorized user with a NetSuite account or log-in, you
+    may use this code subject to the terms that govern your access and use.
+*/
+@import "spinner";
+@import "chevron-up";
+.infinite-scroll-btn-holder {
+    margin: $sc-margin-lv4;
+    text-align: center;
+}
+
+.facets-facet-browse-pagination {
+    float: none;
+    text-align: center;
+}
+
+.infinite-scroll-btn-load-page {
+    text-align: center;
+}
+
+.infinite-scroll-top {
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 999;
+    right: $sc-margin-lv4;
+    bottom: $sc-margin-lv8;
+    background: no-repeat center 43%;
+    background: rgba($sc-neutral-shade, 0.8);
+    @include border-radius($sc-border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infinite-scroll-top-icon {
+    @extend .chevron-up;
+    vertical-align: -webkit-baseline-middle;
+    vertical-align: middle;
+    color: $sc-neutral-shade-0;
+    font-size: $sc-font-size-l * 2;
+}
+
+
+.icon-spinner{
+  @extend .spinner;
+  color: black;
+  animation: spin 1s linear infinite;
+  font-size: $sc-font-size-xxxl;
+  animation-name: rotateloading;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  display: inline-block;
+}
+
+.infinite-scroll-btn-holder:hover {
+  transform: scale(1.1);
+  transition: all 200ms ease-in;
+}
+
+@keyframes rotateloading {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+

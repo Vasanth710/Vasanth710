@@ -1,0 +1,92 @@
+{
+    "name": "GateKeeper",
+    "fantasyName": "Gate Keeper",
+    "vendor": "JJ",
+    "version": "1.0.1",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "On SuiteCommerce websites, it is necessary to implement a login gatekeeper to ensure that customers must log in before accessing item details and shopping functionality such as adding items to the cart and proceeding to checkout. This customization is essential to enhance security and control over user access. ",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/GateKeeper.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/GateKeeper/Configuration/GateKeeper.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/GateKeeper/Sass/_gatekeeper-gatekeeper.scss",
+            "myaccount": "Modules/GateKeeper/Sass/_gatekeeper-gatekeeper.scss",
+            "checkout": "Modules/GateKeeper/Sass/_gatekeeper-gatekeeper.scss"
+        },
+        "files": [
+            "Modules/GateKeeper/Sass/_gatekeeper-gatekeeper.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/GateKeeper/Template/jj_gatekeeper_gatekeeper.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/GateKeeper/Template/jj_gatekeeper_gatekeeper.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/GateKeeper/Template/jj_gatekeeper_gatekeeper.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/GateKeeper/JavaScript/JJ.GateKeeper.GateKeeper.js",
+            "myaccount": "Modules/GateKeeper/JavaScript/JJ.GateKeeper.GateKeeper.js",
+            "checkout": "Modules/GateKeeper/JavaScript/JJ.GateKeeper.GateKeeper.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/GateKeeper/JavaScript/JJ.GateKeeper.GateKeeper.js",
+                    "Modules/GateKeeper/JavaScript/GateKeeper.View.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/GateKeeper/JavaScript/JJ.GateKeeper.GateKeeper.js",
+                    "Modules/GateKeeper/JavaScript/GateKeeper.View.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/GateKeeper/JavaScript/JJ.GateKeeper.GateKeeper.js",
+                    "Modules/GateKeeper/JavaScript/GateKeeper.View.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\GateKeeper",
+    "suitescript2": {
+        "files": []
+    }
+}

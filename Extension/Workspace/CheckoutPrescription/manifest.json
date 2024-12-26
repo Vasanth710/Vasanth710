@@ -1,0 +1,74 @@
+{
+    "name": "CheckoutPrescription",
+    "fantasyName": "CheckoutPrescription",
+    "vendor": "JJ",
+    "version": "1.1.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Upload the prescription for controlled drugs are added in the order",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/CheckoutPrescription.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/CheckoutPrescription/Configuration/CheckoutPrescription.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "checkout": "Modules/CheckoutPrescription/Sass/_checkoutprescription-checkoutprescription.scss"
+        },
+        "files": [
+            "Modules/CheckoutPrescription/Sass/_checkoutprescription-checkoutprescription.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/CheckoutPrescription/Templates/jj_checkoutprescription_checkoutprescription.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/CheckoutPrescription/JavaScript/JJ.CheckoutPrescription.CheckoutPrescription.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/CheckoutPrescription/JavaScript/JJ.CheckoutPrescription.CheckoutPrescription.js",
+                    "Modules/CheckoutPrescription/JavaScript/CheckoutPrescription.View.js",
+                    "Modules/CheckoutPrescription/JavaScript/JJ.CheckoutPrescription.CheckoutPrescription.Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/CheckoutPrescription/SuiteScript/CheckoutPrescription.ServiceController.js",
+        "files": [
+            "Modules/CheckoutPrescription/SuiteScript/JJ.CheckoutPrescription.CheckoutPrescription.js",
+            "Modules/CheckoutPrescription/SuiteScript/CheckoutPrescription.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace/CheckoutPrescription",
+    "suitescript2": {
+        "files": []
+    }
+}

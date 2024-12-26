@@ -1,0 +1,27 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "LoginCustom",
+        "title": "Register Section",
+        "group": "extensions"
+    },
+    "properties": {
+        "LoginCustom.registerHeading": {
+            "group": "extensions",
+            "subtab": "LoginCustom",
+            "type": "string",
+            "title": "Register Section Heading",
+            "default": "New Customer",
+            "description": "This section is for displaying the register section heading."
+        },
+        "LoginCustom.registerContent": {
+            "group": "extensions",
+            "subtab": "LoginCustom",
+            "type": "string",
+            "nsType": "textArea",
+            "title": "Register Section Content",
+            "default": "Create an account to gain access to drug supply info and shop RedBox Rx™",
+            "description": "This section is for displaying the register section contents."
+        }
+    }
+}

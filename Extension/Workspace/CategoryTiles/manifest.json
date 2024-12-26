@@ -1,0 +1,64 @@
+{
+    "name": "CategoryTiles",
+    "fantasyName": "Category Tiles",
+    "vendor": "JJ",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Display Category Tiles on the homw page",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/CategoryTiles/Configuration/CategoryTiles.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/CategoryTiles/Sass/_categorytiles-categorytiles.scss"
+        },
+        "files": [
+            "Modules/CategoryTiles/Sass/_categorytiles-categorytiles.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/CategoryTiles/Templates/jj_categorytiles_categorytiles.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/CategoryTiles/JavaScript/JJ.CategoryTiles.CategoryTiles.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/CategoryTiles/JavaScript/JJ.CategoryTiles.CategoryTiles.js",
+                    "Modules/CategoryTiles/JavaScript/CategoryTiles.View.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\CategoryTiles",
+    "suitescript2": {
+        "files": []
+    }
+}

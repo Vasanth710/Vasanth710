@@ -1,0 +1,165 @@
+.lead-form-container {
+	background-image: url("/site/Banner/wallpaper.webp");
+	background-position: 90%;
+	background-size: cover;
+	padding: $sc-padding-lv8 $sc-padding-lv4;
+}
+
+.checkout-layout-footer .footer-content-upper-section {
+	display: none;
+}
+
+.registration-container {
+	max-width: 1140px;
+	margin: auto;
+
+	.registration-form-controls {
+
+		input {
+			max-width: 300px;
+		}
+
+		select {
+			max-width: 300px;
+			width: 100%;
+			background-position: 100% 75%;
+		}
+	}
+
+	#sig-submitBtn {
+		@extend .button-medium;
+		@extend .button-primary;
+	}
+
+	div#signature-button {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-content: flex-start;
+		padding-top: $sc-padding-lv2;
+	}
+
+	button#sig-clearBtn {
+		padding: $sc-padding-lv1;
+		background-color: rgb(211, 211, 211);
+		border: 1px solid $sc-color-theme-border;
+	}
+
+	button#sig-submitBtn {
+		margin-top: $sc-margin-lv5;
+	}
+
+	.e-signature-container {
+		margin-top: $sc-margin-lv2;
+	}
+
+	#sig-canvas {
+		border: 2px dotted $sc-color-theme-border;
+		border-radius: 15px;
+		cursor: crosshair;
+		max-width: 100%;
+	}
+
+	#registration-radio-error,
+	#registration-signature-error {
+		display: none;
+		width: max-content;
+	}
+
+	#img-sig-image,
+	#textarea-image,
+	[data-input="country"] {
+		display: none;
+	}
+
+	.registration-form-button-submit {
+		margin-top: $sc-margin-lv5;
+	}
+
+	header.registration-header {
+		padding-left: $sc-padding-lv4;
+		background-color: $sc-neutral-shade-0;
+	}
+
+	form.registration-form {
+		display: grid;
+		gap: 25px;
+	}
+
+	.registration-content-basic,
+	.registration-content-office-contact,
+	.registration-content-mrp {
+		background-color: $sc-neutral-shade-0;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		padding: $sc-padding-lv6;
+	}
+
+	.registration-content-basic-heading,
+	.registration-content-office-contact-heading,
+	.registration-content-mrp-heading,
+	.registration-required {
+		width: 100%;
+		padding-bottom: $sc-padding-lv4;
+	}
+
+	.registration-form-controls-group {
+		width: 50%;
+	}
+
+	.registration-form-radio-section {
+		margin-top: $sc-margin-lv2;
+	}
+
+	.registration-form-radio-section label {
+		display: inline;
+	}
+
+	.registration-form-controls-group:has(.registration-form-radio-section) {
+		width: 100%;
+	}
+
+	.registration-form-controls {
+
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+
+		input[type=number] {
+			-moz-appearance: textfield;
+		}
+	}
+
+	@media (max-width: $screen-sm) {
+
+		.registration-content-basic,
+		.registration-content-office-contact,
+		.registration-content-mrp {
+			flex-direction: column;
+		}
+
+		.registration-form-controls-group {
+			width: 100%;
+		}
+
+		.registration-form-controls {
+
+			input,
+			select {
+				max-width: 750px;
+			}
+		}
+
+		.registration-header {
+			text-align: center;
+		}
+	}
+}
+
+#registration-radio-errors {
+	display: none;
+	color: rgb(0, 0, 0);
+}

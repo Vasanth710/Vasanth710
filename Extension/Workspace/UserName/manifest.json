@@ -1,0 +1,69 @@
+{
+    "name": "UserName",
+    "fantasyName": "UserName",
+    "vendor": "JJ",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Show the user name on checkout page,based on the login information",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/UserName.Service.ss"
+            ]
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "checkout": "Modules/UserName/Sass/_username-username.scss"
+        },
+        "files": [
+            "Modules/UserName/Sass/_username-username.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/UserName/Templates/jj_username_username.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/UserName/JavaScript/JJ.UserName.UserName.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/UserName/JavaScript/JJ.UserName.UserName.js",
+                    "Modules/UserName/JavaScript/UserName.View.js",
+                    "Modules/UserName/JavaScript/JJ.UserName.UserName.Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/UserName/SuiteScript/UserName.ServiceController.js",
+        "files": [
+            "Modules/UserName/SuiteScript/JJ.UserName.UserName.js",
+            "Modules/UserName/SuiteScript/UserName.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\UserName",
+    "suitescript2": {
+        "files": []
+    }
+}

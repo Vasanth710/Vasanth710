@@ -1,0 +1,72 @@
+{
+    "name": "CheckoutPrescription",
+    "fantasyName": "CheckoutPrescription",
+    "vendor": "JJ",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "version": "1.1.0",
+    "description": "Upload the prescription for controlled drugs are added in the order",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/CheckoutPrescription.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/CheckoutPrescription/Configuration/CheckoutPrescription.json"
+        ]
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/CheckoutPrescription/Templates/jj_checkoutprescription_checkoutprescription.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "checkout": "Modules/CheckoutPrescription/Sass/_checkoutprescription-checkoutprescription.scss"
+        },
+        "files": [
+            "Modules/CheckoutPrescription/Sass/_checkoutprescription-checkoutprescription.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/CheckoutPrescription/JavaScript/JJ.CheckoutPrescription.CheckoutPrescription.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/CheckoutPrescription/JavaScript/JJ.CheckoutPrescription.CheckoutPrescription.js",
+                    "Modules/CheckoutPrescription/JavaScript/CheckoutPrescription.View.js",
+                    "Modules/CheckoutPrescription/JavaScript/JJ.CheckoutPrescription.CheckoutPrescription.Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/CheckoutPrescription/SuiteScript/CheckoutPrescription.ServiceController.js",
+        "files": [
+            "Modules/CheckoutPrescription/SuiteScript/JJ.CheckoutPrescription.CheckoutPrescription.js",
+            "Modules/CheckoutPrescription/SuiteScript/CheckoutPrescription.ServiceController.js"
+        ]
+    },
+    "suitescript2": {
+        "files": []
+    }
+}

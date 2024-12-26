@@ -1,0 +1,73 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "subscription",
+        "title": "Subscription Tab",
+        "group": "extensions"
+    },
+    "properties": {
+        "subscription.pageTitle": {
+            "group": "extensions",
+            "subtab": "subscription",
+            "type": "string",
+            "title": "Page Title",
+            "default": "Subscription"
+        },
+        "subscription.pageHeader": {
+            "group": "extensions",
+            "subtab": "subscription",
+            "type": "string",
+            "title": "Page Header",
+            "default": "Subscription"
+        },
+        "subscription.failureMessage": {
+            "group": "extensions",
+            "subtab": "subscription",
+            "type": "string",
+            "title": "Subscription Failure Message",
+            "default": "Please ensure all default settings (billing, shipping, and payment) are set."
+        },
+        "subscription.emailId": {
+            "group": "extensions",
+            "subtab": "subscription",
+            "type": "string",
+            "title": "Recipient Email",
+            "default": "julia@jobinandjismi.com"
+        },
+        "subscription.employeeId": {
+            "group": "extensions",
+            "subtab": "subscription",
+            "type": "string",
+            "title": "Sender ID",
+            "default": "1768"
+        },
+        "subscription.subscribeEmailSubject": {
+            "group": "extensions",
+            "subtab": "subscription",
+            "type": "string",
+            "title": "Subscription Email's Subject",
+            "default": "Customer subscribe to Meditrack Subscription"
+        },
+        "subscription.subscribeEmailContent": {
+            "group": "extensions",
+            "subtab": "subscription",
+            "type": "string",
+            "title": "Subscription Email's Content Heading",
+            "default": "A Customer has Subscribed to Meditrack Subscription"
+        },
+        "subscription.unSubscribeEmailSubject": {
+            "group": "extensions",
+            "subtab": "subscription",
+            "type": "string",
+            "title": "Unsubscribe Email's Subject",
+            "default": "Customer Cancels Meditrack Subscription"
+        },
+        "subscription.unSubscribeEmailContent": {
+            "group": "extensions",
+            "subtab": "subscription",
+            "type": "string",
+            "title": "Unsubscribe Email's Content Heading",
+            "default": "A Customer has cancelled Meditrack Subscription"
+        }
+    }
+}

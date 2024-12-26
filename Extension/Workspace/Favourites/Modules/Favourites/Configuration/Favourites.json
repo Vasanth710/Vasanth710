@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "Favourites_subtab",
+        "group": "extensions",
+        "title": "FavouritesDetail",
+        "description": "FavouritesDetail"
+    },
+    "properties": {
+        "FavouritesDetail.itemperpage": {
+            "group": "extensions",
+            "subtab": "Favourites_subtab",
+            "type": "string",
+            "title": "Favourites Title",
+            "description": "Config description example",
+            "default": "5"
+        }
+    }
+}
