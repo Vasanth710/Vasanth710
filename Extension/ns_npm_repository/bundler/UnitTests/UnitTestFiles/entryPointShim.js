@@ -1,1 +1,0 @@
-define('EntryPointShim', ['DependencyShim'], function() {});
